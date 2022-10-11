@@ -927,10 +927,12 @@ export const userProfileData = [
 
 export const ordersGrid = [
   {
+    field: 'Image',
     headerText: 'Image',
-    template: gridOrderImage,
-    textAlign: 'Center',
     width: '120',
+    textAlign: 'Center',
+    template: 'gridOrderImage',
+    // template: "gridOrderImage",
   },
   {
     field: 'OrderItems',
@@ -947,22 +949,23 @@ export const ordersGrid = [
   {
     field: 'TotalAmount',
     headerText: 'Total Amount',
-    format: 'C2',
+    width: '120',
     textAlign: 'Center',
+    format: 'C2',
     editType: 'numericedit',
-    width: '150',
   },
   {
+    field: 'Status',
     headerText: 'Status',
-    template: gridOrderStatus,
-    field: 'OrderItems',
+    width: '150',
     textAlign: 'Center',
-    width: '120',
+    template: "gridOrderStatus",
+    // template: gridOrderStatus,
   },
   {
     field: 'OrderID',
     headerText: 'Order ID',
-    width: '120',
+    width: '150',
     textAlign: 'Center',
   },
 
@@ -2180,14 +2183,12 @@ export const ordersData = [
   {
     OrderID: 10248,
     CustomerName: 'Vinet',
-
     TotalAmount: 32.38,
     OrderItems: 'Fresh Tomato',
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
-    ProductImage:
-      product6,
+    ProductImage: product6,
   },
   {
     OrderID: 345653,
@@ -2197,8 +2198,7 @@ export const ordersData = [
     Location: 'Delhi',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product5,
+    ProductImage: product5,
   },
   {
     OrderID: 390457,

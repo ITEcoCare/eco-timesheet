@@ -23,7 +23,7 @@ const Sidebar = () => {
     // const [selectedPerson, setSelectedPerson] = useState(people[0])
 
     return (
-        <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
+        <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto">
             {activeMenu ? (<>
                 <div className="flex justify-between items-center">
                     <Link to="/" onClick={() => { setActiveMenu(false) }} className="flex items-center gap-3 mt-4 ml-3 text-xl font-bold tracking-tight dark:text-white text-slate-900">
