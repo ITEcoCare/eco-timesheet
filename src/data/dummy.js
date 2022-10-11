@@ -76,10 +76,12 @@ const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
     <img
       className="rounded-full w-10 h-10"
-      src={props.EmployeeImage}
+      src={'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*'}
       alt="employee"
     />
-    <p>{props.Name}</p>
+    
+    <p>'Nancy Davolio'</p>
+    {/* <p>{props.Name}</p> */}
   </div>
 );
 
@@ -447,7 +449,8 @@ export const customersGrid = [
 export const employeesGrid = [
   { headerText: 'Employee',
     width: '150',
-    template: gridEmployeeProfile,
+    // template: "gridEmployeeProfile",
+    // template: gridEmployeeProfile(),
     textAlign: 'Center' },
   { field: 'Name',
     headerText: '',
@@ -462,7 +465,8 @@ export const employeesGrid = [
   { headerText: 'Country',
     width: '120',
     textAlign: 'Center',
-    template: gridEmployeeCountry },
+    template: "gridEmployeeCountry" },
+    // template: gridEmployeeCountry() },
 
   { field: 'HireDate',
     headerText: 'Hire Date',
@@ -1547,8 +1551,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar3,
+    EmployeeImage: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
   },
   {
     EmployeeID: 2,
@@ -1557,8 +1560,8 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: '-',
+    // EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1567,8 +1570,8 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: '-',
+    // EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1577,8 +1580,8 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: '-',
+    // EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1587,8 +1590,8 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: '-',
+    // EmployeeImage: avatar,
   },
   {
     EmployeeID: 4,
@@ -1597,8 +1600,8 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: '-',
+    // EmployeeImage: avatar,
   },
   {
     EmployeeID: 5,
@@ -1607,8 +1610,8 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: '-',
+    // EmployeeImage: avatar2,
   },
   {
     EmployeeID: 1,
@@ -1617,566 +1620,566 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
+    EmployeeImage: '-',
+    // EmployeeImage: avatar2,
 
   },
-  {
-    EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
-  },
-  {
-    EmployeeID: 3,
-    Name: 'Iulia Albu',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Omar Darobe',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Miron Vitold',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 1,
-    Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
-  },
-  {
-    EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
-  },
-  {
-    EmployeeID: 3,
-    Name: 'Iulia Albu',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Omar Darobe',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Miron Vitold',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 1,
-    Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
+  // {
+  //   EmployeeID: 2,
+  //   Name: 'Nasimiyu Danai',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar3,
+  // },
+  // {
+  //   EmployeeID: 3,
+  //   Name: 'Iulia Albu',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar4,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Siegbert Gottfried',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Omar Darobe',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Penjani Inyene',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Miron Vitold',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 1,
+  //   Name: 'Nancy Davolio',
+  //   Title: 'Sales Representative',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //   avatar,
+  // },
+  // {
+  //   EmployeeID: 2,
+  //   Name: 'Nasimiyu Danai',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar3,
+  // },
+  // {
+  //   EmployeeID: 3,
+  //   Name: 'Iulia Albu',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar4,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Siegbert Gottfried',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Omar Darobe',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Penjani Inyene',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Miron Vitold',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 1,
+  //   Name: 'Nancy Davolio',
+  //   Title: 'Sales Representative',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //   avatar2,
 
-  },
-  {
-    EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
-  },
-  {
-    EmployeeID: 3,
-    Name: 'Iulia Albu',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Omar Darobe',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Miron Vitold',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 1,
-    Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
+  // },
+  // {
+  //   EmployeeID: 2,
+  //   Name: 'Nasimiyu Danai',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar3,
+  // },
+  // {
+  //   EmployeeID: 3,
+  //   Name: 'Iulia Albu',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar4,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Siegbert Gottfried',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Omar Darobe',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Penjani Inyene',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Miron Vitold',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 1,
+  //   Name: 'Nancy Davolio',
+  //   Title: 'Sales Representative',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //   avatar2,
 
-  },
-  {
-    EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
-  },
-  {
-    EmployeeID: 3,
-    Name: 'Iulia Albu',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Omar Darobe',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Miron Vitold',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 1,
-    Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
+  // },
+  // {
+  //   EmployeeID: 2,
+  //   Name: 'Nasimiyu Danai',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar3,
+  // },
+  // {
+  //   EmployeeID: 3,
+  //   Name: 'Iulia Albu',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar4,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Siegbert Gottfried',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Omar Darobe',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Penjani Inyene',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Miron Vitold',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 1,
+  //   Name: 'Nancy Davolio',
+  //   Title: 'Sales Representative',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //   avatar2,
 
-  },
-  {
-    EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
-  },
-  {
-    EmployeeID: 3,
-    Name: 'Iulia Albu',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Omar Darobe',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Miron Vitold',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 1,
-    Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
+  // },
+  // {
+  //   EmployeeID: 2,
+  //   Name: 'Nasimiyu Danai',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar3,
+  // },
+  // {
+  //   EmployeeID: 3,
+  //   Name: 'Iulia Albu',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar4,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Siegbert Gottfried',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Omar Darobe',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Penjani Inyene',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Miron Vitold',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 1,
+  //   Name: 'Nancy Davolio',
+  //   Title: 'Sales Representative',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //   avatar2,
 
-  },
-  {
-    EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
-  },
-  {
-    EmployeeID: 3,
-    Name: 'Iulia Albu',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Omar Darobe',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Miron Vitold',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 1,
-    Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
+  // },
+  // {
+  //   EmployeeID: 2,
+  //   Name: 'Nasimiyu Danai',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar3,
+  // },
+  // {
+  //   EmployeeID: 3,
+  //   Name: 'Iulia Albu',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar4,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Siegbert Gottfried',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Omar Darobe',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Penjani Inyene',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Miron Vitold',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 1,
+  //   Name: 'Nancy Davolio',
+  //   Title: 'Sales Representative',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //   avatar2,
 
-  },
-  {
-    EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
-  },
-  {
-    EmployeeID: 3,
-    Name: 'Iulia Albu',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Omar Darobe',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Miron Vitold',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 1,
-    Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
+  // },
+  // {
+  //   EmployeeID: 2,
+  //   Name: 'Nasimiyu Danai',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar3,
+  // },
+  // {
+  //   EmployeeID: 3,
+  //   Name: 'Iulia Albu',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar4,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Siegbert Gottfried',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Omar Darobe',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Penjani Inyene',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Miron Vitold',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 1,
+  //   Name: 'Nancy Davolio',
+  //   Title: 'Sales Representative',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //   avatar2,
 
-  },
-  {
-    EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
-  },
-  {
-    EmployeeID: 3,
-    Name: 'Iulia Albu',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Omar Darobe',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Miron Vitold',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
+  // },
+  // {
+  //   EmployeeID: 2,
+  //   Name: 'Nasimiyu Danai',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar3,
+  // },
+  // {
+  //   EmployeeID: 3,
+  //   Name: 'Iulia Albu',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar4,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Siegbert Gottfried',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Omar Darobe',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 4,
+  //   Name: 'Penjani Inyene',
+  //   Title: 'Marketing Head',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar,
+  // },
+  // {
+  //   EmployeeID: 5,
+  //   Name: 'Miron Vitold',
+  //   Title: 'HR',
+  //   HireDate: '01/02/2021',
+  //   Country: 'USA',
+  //   ReportsTo: 'Carson',
+  //   EmployeeImage:
+  //     avatar2,
+  // },
 ];
 
 export const ordersData = [

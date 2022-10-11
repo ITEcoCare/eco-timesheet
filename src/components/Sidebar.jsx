@@ -30,13 +30,13 @@ const Sidebar = () => {
                         <ImLeaf size={30} className="" color="green" />
                         <span className="text-gray-400 ">EcoTimesheet</span>
                     </Link>
-                    <TooltipComponent content="Close" position="BottomCenter" className="m-2">
+                    {/* <TooltipComponent content="Close" position="BottomCenter" className="m-2">
                         <button type="button" onClick={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} className="text-xl rounded-md p-2 mt-4 text-green-600 hover:bg-gray-200 hover:text-white" >
                             <CgClose />
                         </button>
-                    </TooltipComponent>
+                    </TooltipComponent> */}
                 </div>
-                <div className="mt-10">
+                <div className="mt-10 mb-24">
                     {menuHead.map((val) => (
                         <div key={val.title}>
                             {/* <div className="relative flex flex-row items-center h-11 focus:outline-none text-gray-600 border-l-4 border-transparent pr-6 hover:bg-green-500 hover:text-white transition-colors duration-300 transform rounded-md dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200" > */}
