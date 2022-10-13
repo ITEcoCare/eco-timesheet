@@ -2,6 +2,8 @@ import React, { createContext, useContext, useState } from 'react';
 
 const StateContext = createContext();
 
+const urlAPI = "";
+
 const initialState = {
   chat: false,
   userProfile: false,

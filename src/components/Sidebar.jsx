@@ -18,7 +18,7 @@ const Sidebar = () => {
     // const normalLink = "flex relative items-center gap-5 pl-4 pt-3 pb-2.5 text-sm  items-center focus:outline-none text-gray-700 border-l-4 border-transparent pr-6 hover:bg-green-600 hover:text-white transition-colors duration-300 transform rounded-md dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-black m-2";
     // const activeLink = "flex relative flex-row items-center gap-5 pl-4 pt-3 pb-2.5 text-sm font-extrabold focus:outline-none text-gray-600 border-l-4 border-transparent pr-6 bg-blue-500 text-white hover:bg-green-500 hover:text-white transition-colors duration-300 transform rounded-md dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200 m-2";
     const normalLink = "flex relative items-center rounded-md text-sm gap-5 pl-4 pt-3 pb-2.5 mt-2 hover:drop-shadow-md hover:bg-green-600 text-gray-700 hover:text-white transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-100 duration-200 m-2";
-    const activeLink = "flex relative items-center rounded-md text-sm gap-5 pl-4 pt-3 pb-2.5 mt-2 font-extrabold focus:outline-none text-gray-600 drop-shadow-md bg-blue-600 text-white transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-100 duration-200 m-2";
+    const activeLink = "flex relative items-center rounded-md text-sm gap-5 pl-4 pt-3 pb-2.5 mt-2 font-extrabold focus:outline-none drop-shadow-md bg-blue-600 text-white transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-100 duration-200 m-2";
 
     // const [selectedPerson, setSelectedPerson] = useState(people[0])
 

@@ -33,34 +33,34 @@ const Navbar = () => {
   const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick } = useStateContext();
 
   return (
-    <div className='flex justify-between p-2 md:ml-6 md:mr-6 relative'>
+      <div className='flex justify-between p-2 md:ml-6 md:mr-6 relative'>
+          
+          <NavButton className='fixed' title="Menu" icon={<HiMenu size={20}/>}
+            customFunc={ () => setActiveMenu( (prevActiveMenu) => !prevActiveMenu) } 
+            />
+          <div className='flex items-center '>
+            <NavButton title="Chat" dotColor={"crimson"} customFunc={ () => handleClick('chat') } icon={<BsChatLeftQuote size={20}/>}/>
+            <NavButton title="Notification" dotColor={"crimson"} customFunc={ () => handleClick('notification')} icon={<IoMdNotifications size={20}/>}/>
+            <TooltipComponent
+              content="Profile"
+              position="BottomCenter"
+              >
+              <div className="flex items-center gap-2 cursor-pointer p-3 mt-3 rounded-lg hover:bg-gray-300" onClick={ () => handleClick('userProfile')}>
+                <img src={avatarA} className="w-8 h-8 rounded-lg"/>
+                <p>
+                  <span className="text-14">Hi, </span>{' '}
+                  <span className="text-14 font-bold">Sahabit</span>
+                </p>
+                <IoMdArrowDropdown title="Profile" size={20}/>
+              </div>
 
-      <NavButton title="Menu" icon={<HiMenu size={20}/>}
-        customFunc={ () => setActiveMenu( (prevActiveMenu) => !prevActiveMenu) } 
-        />
-      <div className='flex items-center'>
-        <NavButton title="Chat" dotColor={"crimson"} customFunc={ () => handleClick('chat') } icon={<BsChatLeftQuote size={20}/>}/>
-        <NavButton title="Notification" dotColor={"crimson"} customFunc={ () => handleClick('notification')} icon={<IoMdNotifications size={20}/>}/>
-        <TooltipComponent
-          content="Profile"
-          position="BottomCenter"
-          >
-          <div className="flex items-center gap-2 cursor-pointer p-3 mt-3 rounded-lg hover:bg-gray-300" onClick={ () => handleClick('userProfile')}>
-            <img src={avatarA} className="w-8 h-8 rounded-lg"/>
-            <p>
-              <span className="text-14">Hi, </span>{' '}
-              <span className="text-14 font-bold">Sahabit</span>
-            </p>
-            <IoMdArrowDropdown title="Profile" size={20}/>
+            </TooltipComponent>
+            {isClicked.chat && <Chat />}
+            {isClicked.notification && <Notification />}
+            {isClicked.userProfile && <UserProfile />}
           </div>
-
-        </TooltipComponent>
-        {isClicked.chat && <Chat />}
-        {isClicked.notification && <Notification />}
-        {isClicked.userProfile && <UserProfile />}
+        
       </div>
-
-    </div>
   )
 }
 
