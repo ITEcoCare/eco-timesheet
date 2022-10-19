@@ -5,11 +5,13 @@ import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
 import { scheduleData } from "../data/dummy"
 
 const Calendar = () => {
+  const isStaff = true;
+
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl overflow-x-auto">
       <Header category="Apps" title="Calendar" />
 
-      <ScheduleComponent height="500px" eventSettings={{ dataSource: scheduleData }} selectedDate={ new Date( 2022, 0, 10)}>
+      <ScheduleComponent height="500px" readonly={isStaff ? true : false} eventSettings={{ dataSource: scheduleData }} selectedDate={ new Date( 2022, 0, 10)}>
         <Inject services={[ Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop, ]} />
       </ScheduleComponent>
     </div>

@@ -14,13 +14,13 @@ import ColorPicker from './pages/ColorPicker';
 const App = () => {
 
   // const activeMenu = true;
-  const { activeMenu, setActiveMenu } = useStateContext();
+  const { activeMenu, setActiveMenu, themeSettings, setThemeSettings, currentColor } = useStateContext();
 
   return (
     // <div className={currentMode === 'Dark' ? 'dark' : ''}>
-    <div className="">
+    <div className=" ">
       <BrowserRouter>
-        <div className="flex relative dark:bg-main-dark-bg">
+        <div className="flex relative dark:bg-main-dark-bg bg-main-dark-bg">
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
             <TooltipComponent
               content="Settings"
@@ -28,9 +28,9 @@ const App = () => {
             >
               <button
                 type="button"
-                onClick={() => { }}
-                // style={{ background: currentColor, borderRadius: '50%' }}
-                className="rounded-full text-3xl p-3 hover:drop-shadow-xl hover:bg-green-600 text-green-600 hover:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                onClick={() => setThemeSettings(true)}
+                style={{ background: currentColor, borderRadius: '50%' }}
+                className="rounded-full text-3xl p-3 hover:drop-shadow-xl text-white hover:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
               >
                 <FiSettings />
               </button>
@@ -49,16 +49,15 @@ const App = () => {
           <div
             className={
               activeMenu
-                ? 'dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-64 max-w-5xl'
-                : 'bg-main-bg dark:bg-main-dark-bg w-full min-h-screen flex-2'
+                ? 'dark:bg-main-dark-bg  bg-gray-200 min-h-screen md:ml-64 max-w-5xl'
+                : 'bg-gray-200 dark:bg-main-dark-bg w-full min-h-screen flex-2'
             }
           >
-            <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
-              <Navbar />
+            <div className="relative md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
+              <Navbar className="fixed"/>
             </div>
             <div>
-              {/* {themeSettings && (<ThemeSettings />)} */}
-
+              {themeSettings && <ThemeSettings/>}
               <Routes>
                 {/* Main Dashboard */}
                 <Route path="/" element={<Dashboard />} />
