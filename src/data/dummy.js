@@ -891,11 +891,11 @@ export const themeColors = [
   },
   {
     name: 'red-theme',
-    color: '#FF5C8E',
+    color: '#CC5C67',
   },
   {
-    name: 'indigo-theme',
-    color: '#1E4DB7',
+    name: 'monochrome',
+    color: '#20232A',
   },
 ];
 

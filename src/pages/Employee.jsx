@@ -84,8 +84,8 @@ const Employee = () => {
   ];
 
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl overflow-x-auto ">
-      <Header category="Page" title="Employee" />
+    <div className="mt-32 p-10 m-10 bg-white rounded-3xl overflow-x-auto">
+      <Header category="Apps" title="Employee" />
 
       <div className="min-h-screen bg-gray-100 text-gray-900">
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">

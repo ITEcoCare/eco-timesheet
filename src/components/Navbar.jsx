@@ -33,7 +33,8 @@ const Navbar = () => {
   const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, currentColor } = useStateContext();
 
   return (
-      <div className='flex justify-between p-2 relative rounded-b-xl' style={{backgroundColor: currentColor }}>
+   
+      <div className='mt-0 fixed w-full z-10 top-0 flex justify-between p-2 rounded-b-xl' style={{backgroundColor: currentColor }}>
           
           <NavButton className='fixed' title="Menu" icon={<HiMenu size={20}/>}
             customFunc={ () => setActiveMenu( (prevActiveMenu) => !prevActiveMenu) }

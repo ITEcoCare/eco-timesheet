@@ -8,7 +8,7 @@ const Calendar = () => {
   const isStaff = true;
 
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl overflow-x-auto">
+    <div className="mt-32 p-10 m-10 bg-white rounded-3xl overflow-x-auto">
       <Header category="Apps" title="Calendar" />
 
       <ScheduleComponent height="500px" readonly={isStaff ? true : false} eventSettings={{ dataSource: scheduleData }} selectedDate={ new Date( 2022, 0, 10)}>

@@ -53,12 +53,12 @@ const App = () => {
                 : 'bg-gray-200 dark:bg-main-dark-bg w-full min-h-screen flex-2'
             }
           >
-            <div className="relative md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
-              <Navbar className="fixed"/>
+            <div className=" dark:bg-main-dark-bg ">
+              <Navbar className=""/>
             </div>
             <div>
               {themeSettings && <ThemeSettings/>}
-              <Routes>
+              <Routes className=" ">
                 {/* Main Dashboard */}
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/dashboard" element={<Dashboard />} />
